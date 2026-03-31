@@ -3,7 +3,7 @@ import Razorpay from "razorpay";
 function getKeys() {
   const mode = process.env.APP_MODE || "TEST";
 
-  if (mode === "PROD") {
+  if (mode === "LIVE") {
     return {
       key_id: process.env.RAZORPAY_LIVE_KEY_ID!,
       key_secret: process.env.RAZORPAY_LIVE_KEY_SECRET!,
